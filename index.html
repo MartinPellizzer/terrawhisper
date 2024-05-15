@@ -9,48 +9,65 @@
     <link rel="stylesheet" href="util.css">
     <link rel="stylesheet" href="style.css">
     <title>Herbalism & Natural Healing</title>
-
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9086LN3SRR"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-9086LN3SRR');
+    gtag('config', 'G-9086LN3SRR');
     </script>
 
 </head>
 
 <body>
+    
+        <header class="container-lg">
+            <a class="logo" href="/">TerraWhisper</a>
+            <nav>
+                <input type="checkbox" class="toggle-menu">
+                <div class="hamburger"></div>
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/herbalism.html">Herbalism</a></li>
+                    <li><a href="/ailments.html">Ailments</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    
 
-    <header class="container-lg">
-        <a href="/">
-            <img src="images/terrawhisper-logo.jpg" alt="terrawhisper logo" height="64">
-        </a>
-        <nav>
-            <input type="checkbox" class="toggle-menu">
-            <div class="hamburger"></div>
-            <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/herbalism.html">Herbalism</a></li>
-                <li><a href="/ailments.html">Ailments</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <!-- <header class="header">
+        <div class="container-lg">
+            <div class="header-section">
+                <a href="">TerraWhisper</a>
+                <nav>
+                    <input type="checkbox" class="toggle-menu">
+                    <div class="hamburger"></div>
+                    <ul class="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/herbalism.html">Herbalism</a></li>
+                        <li><a href="/ailments.html">Ailments</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> -->
 
     <main>
-        <section class="container-lg py-48 grid grid-2 gap-32 items-center">
-            <div>
-                <h1 class="mb-16">The Art and Science of Healing with Herbs</h1>
-                <p class="mb-32">Learn to use medicinal herbs to improve your physical, mental, and spiritual health.
-                    Discover 1000+ medical plants in our database and how to leverage them to relieve most common
-                    ailments, diseases, and other health problems.
-            </div>
-            <div>
-                <img class="rounded-xl" src="/images/healing-herbs.jpg" alt="healing herbs">
+
+        <section class="hero">
+            <div class="grid grid-2 items-center">
+                <div class="hero-content">
+                    <h1>Scientific Herbalism.<br><span>Learn the art and science of using medicinal herbs to
+                            heal more than 300 physical, mental, and spiritual ailments.</span></h1>
+                    <a class="button-secondary" href="">Browse Ailments</a>
+                </div>
+                <div class="hero-img">
+                </div>
             </div>
         </section>
         </p>
@@ -95,52 +112,57 @@
             <h2>Best Herbal Teas</h2>
             <p>Discover the healing power of nature's infusions.</p>
             <div class="home-best-teas grid grid-4 gap-24">
-
-                <a href="/herbalism/tea/digestive-system/gut-health.html">
-                    <div class="card">
-                        <img class="card-image" src="/images/herbal-tea-for-gut-health-overview.jpg" alt="" width="400"
-                            height="300">
-                        <h3 class="px-16 mt-16">10 Best Herbal Teas For Gut Health</h3>
-                        <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
-                    </div>
-                </a>
-
-                <a href="/herbalism/tea/digestive-system/bad-breath.html">
-                    <div class="card">
-                        <img class="card-image" src="/images/herbal-tea-for-bad-breath-overview.jpg" alt="" width="400"
-                            height="300">
-                        <h3 class="px-16 mt-16">10 Best Herbal Teas For Bad Breath</h3>
-                        <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
-                    </div>
-                </a>
-
-                <a href="/herbalism/tea/digestive-system/dry-mouth.html">
-                    <div class="card">
-                        <img class="card-image" src="/images/herbal-tea-for-dry-mouth-overview.jpg" alt="" width="400"
-                            height="300">
-                        <h3 class="px-16 mt-16">10 Best Herbal Teas For Dry Mouth</h3>
-                        <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
-                    </div>
-                </a>
-
-                <a href="/herbalism/tea/digestive-system/mouth-ulcers.html">
-                    <div class="card">
-                        <img class="card-image" src="/images/herbal-tea-for-mouth-ulcers-overview.jpg" alt=""
-                            width="400" height="300">
-                        <h3 class="px-16 mt-16">10 Best Herbal Teas For Mouth Ulcers</h3>
-                        <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
-                    </div>
-                </a>
-
-                <a href="/herbalism/tea/digestive-system/oral-thrush.html">
-                    <div class="card">
-                        <img class="card-image" src="/images/herbal-tea-for-oral-thrush-overview.jpg" alt="" width="400"
-                            height="300">
-                        <h3 class="px-16 mt-16">10 Best Herbal Teas For Oral Thrush</h3>
-                        <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
-                    </div>
-                </a>
-
+                
+            <a href="/herbalism/tea/digestive-system/gut-health.html">
+                <div class="card">
+                    <img class="card-image"
+                        src="/images/herbal-tea-for-gut-health-overview.jpg" alt=""
+                        width="400" height="300">
+                    <h3 class="px-16 mt-16">10 Best Herbal Teas For Gut Health</h3>
+                    <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
+                </div>
+            </a>
+        
+            <a href="/herbalism/tea/digestive-system/bad-breath.html">
+                <div class="card">
+                    <img class="card-image"
+                        src="/images/herbal-tea-for-bad-breath-overview.jpg" alt=""
+                        width="400" height="300">
+                    <h3 class="px-16 mt-16">10 Best Herbal Teas For Bad Breath</h3>
+                    <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
+                </div>
+            </a>
+        
+            <a href="/herbalism/tea/digestive-system/dry-mouth.html">
+                <div class="card">
+                    <img class="card-image"
+                        src="/images/herbal-tea-for-dry-mouth-overview.jpg" alt=""
+                        width="400" height="300">
+                    <h3 class="px-16 mt-16">10 Best Herbal Teas For Dry Mouth</h3>
+                    <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
+                </div>
+            </a>
+        
+            <a href="/herbalism/tea/digestive-system/mouth-ulcers.html">
+                <div class="card">
+                    <img class="card-image"
+                        src="/images/herbal-tea-for-mouth-ulcers-overview.jpg" alt=""
+                        width="400" height="300">
+                    <h3 class="px-16 mt-16">10 Best Herbal Teas For Mouth Ulcers</h3>
+                    <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
+                </div>
+            </a>
+        
+            <a href="/herbalism/tea/digestive-system/oral-thrush.html">
+                <div class="card">
+                    <img class="card-image"
+                        src="/images/herbal-tea-for-oral-thrush-overview.jpg" alt=""
+                        width="400" height="300">
+                    <h3 class="px-16 mt-16">10 Best Herbal Teas For Oral Thrush</h3>
+                    <p class="px-16 mt-16">Boosts the immune system and fights infections.</p>
+                </div>
+            </a>
+        
             </div>
         </section>
 
