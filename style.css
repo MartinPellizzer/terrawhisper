@@ -36,32 +36,6 @@ body {
     color: #404040;
 }
 
-/* *************************************************************** */
-/* SIZES */
-/* *************************************************************** */
-
-.text-72 {
-    font-size: 7.2rem;
-    line-height: 1;
-}
-
-.text-48 {
-    font-size: 4.8rem;
-    line-height: 1;
-}
-
-.text-36 {
-    font-size: 3.6rem;
-    line-height: 4rem;
-}
-
-.text-white {
-    color: white;
-}
-
-.text-neutral-700 {
-    color: #404040;
-}
 
 /* ************************************************************ */
 /* CONTAINER */
@@ -73,16 +47,35 @@ body {
     padding-right: 2.4rem;
 }
 
+/*
 .container-md {
     max-width: 76.8rem;
     margin: 0 auto;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
 }
+*/
+
+.container-md {
+    max-width: 76.8rem;
+}
 
 .container-lg {
     max-width: 128.0rem;
     margin: 0 auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+.container-xl {
+    max-width: 128.0rem;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.px-24 {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
 }
@@ -93,20 +86,6 @@ body {
 .logo {
     color: #030712;
     text-decoration: none;
-}
-
-h1 {
-    /* font-family: comfortaa-bold, serif; */
-    font-size: 4.8rem;
-    color: #0c0a09;
-    margin-bottom: 1.6rem;
-}
-
-h2 {
-    font-size: 3.6rem;
-    color: #0c0a09;
-    margin-top: 6.4rem;
-    margin-bottom: 1.6rem;
 }
 
 h3 {
@@ -223,7 +202,7 @@ td {
 }
 
 .gap-96 {
-    gap: 9.69rem;
+    gap: 9.6rem;
 }
 
 .justify-between {
@@ -360,9 +339,6 @@ td {
     max-width: 64.0rem;
     margin-left: auto;
     padding-left: 2.4rem;
-    padding-right: 2.4rem;
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
 }
 
 .hero-img {
@@ -371,19 +347,6 @@ td {
     background: linear-gradient(rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity))), url('/images/hero-salvia-2.jpg');
     background-position: center;
     background-size: cover;
-}
-
-.hero h1 {
-    font-size: 9.6rem;
-    font-weight: 400;
-    line-height: 1;
-    margin-bottom: 1.6rem;
-}
-
-.hero h1 span {
-    display: inline-block;
-    font-size: 2.0rem;
-    line-height: 3.0rem;
 }
 
 
@@ -820,21 +783,9 @@ footer a {
         grid-template-columns: 1fr;
     }
 
-
-    .hero h1 {
-        font-size: 6.4rem;
-    }
-
-    .hero h1 span {
-        display: inline-block;
-        font-size: 1.8rem;
-        line-height: 2.7rem;
-    }
-
     .hero-img {
         height: 40rem;
     }
-
 
 }
 
@@ -852,7 +803,75 @@ footer a {
 
 
 
-/* UTILS **************************************************** */
+
+/***************************************************/
+/* ;util */
+/***************************************************/
+
+.text-96 {
+    font-size: 9.6rem;
+    line-height: 1;
+}
+
+.text-72 {
+    font-size: 7.2rem;
+    line-height: 1;
+}
+
+.text-64 {
+    font-size: 6.4rem;
+    line-height: 1;
+}
+
+.text-48 {
+    font-size: 4.8rem;
+    line-height: 1;
+}
+
+.text-36 {
+    font-size: 3.6rem;
+    line-height: 4rem;
+}
+
+.text-32 {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+}
+
+.text-24 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.text-18 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.text-16 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-neutral-700 {
+    color: #404040;
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.text-black {
+    color: black;
+}
+
+.bg-black {
+    background-color: black;
+}
 
 .pt-16 {
     padding-top: 1.6rem;
@@ -875,6 +894,58 @@ footer a {
     margin-bottom: 9.6rem;
 }
 
+.mb-16 {
+    margin-bottom: 1.6rem;
+}
+
+.mb-32 {
+    margin-bottom: 3.2rem;
+}
+
+.py-96 {
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+}
+
+.py-192 {
+    padding-top: 19.2rem;
+    padding-bottom: 19.2rem;
+}
+
+.border {
+    border: 1px;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.border-black {
+    border-color: black;
+}
+
+.border-white {
+    border-color: white;
+}
+
+.no-underline {
+    text-decoration-line: none;
+}
+
+.px-16 {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.py-8 {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+
+/***************************************************/
+/* ;blog */
+/***************************************************/
 
 
 .blog-grid h3 {
@@ -951,6 +1022,11 @@ footer a {
     font-weight: 700;
     color: #404040;
 }
+
+
+/***************************************************/
+/* ;cookies */
+/***************************************************/
 
 .cookie-box {
     background-color: #030712;
