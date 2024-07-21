@@ -24,13 +24,11 @@ body {
     color: #404040;
 }
 
+
 /* *************************************************************** */
 /* COLORS */
 /* *************************************************************** */
 
-.text-white {
-    color: white;
-}
 
 .text-neutral-700 {
     color: #404040;
@@ -825,6 +823,18 @@ footer a {
 /* ;util */
 /***************************************************/
 
+.font-normal {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
 .text-96 {
     font-size: 9.6rem;
     line-height: 1;
@@ -870,16 +880,16 @@ footer a {
     line-height: 2.4rem;
 }
 
+.uppercase {
+   text-transform: uppercase; 
+}
+
 .text-white {
     color: white;
 }
 
 .text-neutral-700 {
     color: #404040;
-}
-
-.text-normal {
-    font-weight: normal;
 }
 
 .text-black {
