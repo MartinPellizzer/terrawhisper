@@ -1,3 +1,23 @@
+@font-face {
+    font-family: lato-regular;
+    src: url("./assets/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: lato-bold;
+    src: url("./assets/fonts/Lato/Lato-Bold.ttf");
+}
+
+.font-lato-regular {
+    font-family: lato-regular;
+    font-weight: 400;
+}
+
+.font-lato-bold {
+    font-family: lato-bold;
+    font-weight: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +30,7 @@ html {
 
 body {
     font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: lato-regular, Arial, Helvetica, sans-serif;
 }
 
 /* ************************************************************ */
@@ -48,6 +68,30 @@ body {
     max-width: 76.8rem;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
+}
+
+.container-xl-half {
+    max-width: 64.0rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.bg-emerald-700 {
+    background-color: #047857;
+}
+
+.bg-emerald-800 {
+    background-color: #065f56;
+}
+
+.bg-emerald-900 {
+    background-color: #064e3b;
+}
+
+.bg-emerald-950 {
+    background-color: #022c22;
 }
 
 /* *************************************************************** */
@@ -219,6 +263,18 @@ td {
     text-align: center;
 }
 
+.h-600 {
+    height: 60rem;
+}
+
+.h-800 {
+    height: 80rem;
+}
+
+.h-1000 {
+    height: 100rem;
+}
+
 .h-80p {
     height: 80%;
 }
@@ -251,6 +307,7 @@ td {
 
 .text-64 {
     font-size: 6.4rem;
+    line-height: 1;
 }
 
 .text-96 {
@@ -287,6 +344,14 @@ td {
     border-bottom-width: 1px;
 }
 
+.border-b-2 {
+    border-bottom-width: 2px;
+}
+
+.border-b-4 {
+    border-bottom-width: 4px;
+}
+
 .border-black {
     border-color: black;
 }
@@ -297,6 +362,10 @@ td {
 
 .text-neutral-200 {
     color: #e5e5e5;
+}
+
+.mb-8 {
+    margin-bottom: 0.8rem;
 }
 
 .mb-16 {
@@ -327,8 +396,24 @@ td {
     margin-top: 0;
 }
 
+.mt-8 {
+    margin-top: 0.8rem;
+}
+
+.mt-16 {
+    margin-top: 1.6rem;
+}
+
+.mt-48 {
+    margin-top: 4.8rem;
+}
+
 .mt-64 {
     margin-top: 6.4rem;
+}
+
+.mt-96 {
+    margin-top: 9.6rem;
 }
 
 .my-16 {
@@ -470,6 +555,10 @@ td {
     background: white;
 }
 
+.bg-black {
+    background: black;
+}
+
 .inline-block {
     display: inline-block;
 }
@@ -515,6 +604,19 @@ td {
     margin-bottom: 3.2rem;
 }
 
+.footer {
+    max-width: 128.0rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
 .button {
     display: inline-block;
     border: 1px solid black;
@@ -525,34 +627,54 @@ td {
     text-decoration: none;
 }
 
-.homepage-hero-content {
-    display: grid;
-    align-items: center;
+.button-white {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 1.2rem 2.4rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* --------------------------------- */
+.homepage-hero-section {
+}
+
+.homepage-hero-layout {
     height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #14532d;
 }
 
-.homepage-hero-card {
-    max-width: 76.8rem;
-    background: white;
-    padding: 3.2rem;
+.homepage-hero-content-container {
+    max-width: 64.0rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+    margin-right: 0;
+    margin-left: auto;
 }
 
-.homepage-hero-card-title {
+.homepage-hero-title {
     font-size: 7.2rem;
     line-height: 1;
     font-weight: 400;
-    color: black;
-    margin-bottom: 1.6rem;
+    color: white;
+    margin-right: 4.8rem;
 }
 
-@media (max-width: 768px) {
-    .homepage-hero-card-title {
-        font-size: 4.8rem;
-    }
+.homepage-hero-image {
+    height: 80rem;
+    object-fit: contain;
 }
 
+/* --------------------------------- */
 .homepage-what {
-    padding-top: 6.4rem;
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
     max-width: 99.6rem;
     margin-left: auto;
     margin-right: auto;
@@ -563,15 +685,163 @@ td {
     font-size: 3.6rem;
     line-height: 4.0rem;
     font-weight: 700;
+    padding-top: 0;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
     margin-bottom: 2.4rem;
 }
 
+/* --------------------------------- */
+.homepage-benefits-layout {
+    display: flex;
+    align-items: center;
+    background-color: #14532d;
+}
+
+.homepage-benefits-image {
+    height: 80rem;
+    object-fit: contain;
+}
+
+.homepage-benefits-content-container {
+    max-width: 64.0rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+    margin-right: auto;
+    margin-left: 0;
+    color: white;
+}
+
+.homepage-benefits-title {
+    font-size: 6.4rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-right: 4.8rem;
+}
+
+/* --------------------------------- */
+.homepage-encyclopedia-intro-layout {
+    display: flex;
+    align-items: center;
+}
+
+/* --------------------------------- */
+.homepage-encyclopedia-benefits-layout {
+    max-width: 128.0rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.homepage-encyclopedia-benefits-item {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+/* --------------------------------- */
+.homepage-encyclopedia-features-layout {
+    max-width: 128.0rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.homepage-encyclopedia-features-item {
+    display: flex;
+    gap: 3.2rem;
+}
+
+/* --------------------------------- */
 @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    /* --------------------------------- */
+    .homepage-hero-layout {
+        flex-direction: column;
+    }
+
+    .homepage-hero-image {
+        height: 0;
+    }
+
+    .homepage-hero-title {
+        font-size: 6.4rem;
+        margin-right: 0;
+    }
+
+    .homepage-hero-content-container {
+        text-align: center;
+    }
+
+    /* --------------------------------- */
     .homepage-what-title {
         font-size: 2.4rem;
         line-height: 3.2rem;
+    }
+
+    /* --------------------------------- */
+    .homepage-benefits-layout {
+        flex-direction: column;
+    }
+
+    .homepage-benefits-content-container {
+        text-align: center;
+    }
+
+    .homepage-benefits-image {
+        height: 0;
+    }
+
+    .homepage-benefits-title {
+        margin-right: 0;
+    }
+
+    /* --------------------------------- */
+    .homepage-encyclopedia-intro-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* --------------------------------- */
+    .homepage-encyclopedia-features-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homepage-encyclopedia-features-item {
+        flex-direction: column;
+    }
+
+    /* --------------------------------- */
+    .homepage-encyclopedia-benefits-layout {
+       text-align: center;
+    }
+
+    .homepage-encyclopedia-benefits-item {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
     }
 }
 
@@ -606,3 +876,86 @@ td {
 /* ;article */
 /***************************************************************/
 
+
+
+/***************************************************************/
+/* ;spacing */
+/***************************************************************/
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.px-4 {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.px-8 {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.px-16 {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.py-8 {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.pt-4 {
+    padding-top: 0.4rem;
+}
+
+.pt-8 {
+    padding-top: 0.8rem;
+}
+
+.pt-16 {
+    padding-top: 1.6rem;
+}
+
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.pb-4 {
+    padding-bottom: 0.4rem;
+}
+
+.pb-8 {
+    padding-bottom: 0.8rem;
+}
+
+.pb-96 {
+    padding-bottom: 9.6rem;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.ml-48 {
+    margin-left: 4.8rem;
+}
+
+.pl-32 {
+    padding-left: 3.2rem;
+}
