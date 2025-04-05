@@ -620,6 +620,39 @@ p {
     padding-right: 2.4rem;
 }
 
+.button-orange {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #c2410c;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+.button-black {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+.button-white {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
 .button-amazon {
     display: inline-block;
     text-decoration: none;
