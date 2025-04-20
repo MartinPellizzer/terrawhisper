@@ -745,7 +745,17 @@ header {
     /* top: 0; */
     /* z-index: 1000; */
     /* background-color: #ffffff; */
-    border-bottom: 1px solid #d4d4d4;
+    /* border-bottom: 1px solid #d4d4d4; */
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    transition: 0.3s;
 }
 
 .header {
