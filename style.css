@@ -1,4 +1,24 @@
 @font-face {
+    font-family: raleway-regular;
+    src: url("./assets/fonts/raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: raleway-medium;
+    src: url("./assets/fonts/raleway/static/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: raleway-bold;
+    src: url("./assets/fonts/raleway/Raleway-Bold.ttf");
+}
+
+@font-face {
+    font-family: lustria-regular;
+    src: url("./assets/fonts/lustria/Lustria-Regular.ttf");
+}
+
+@font-face {
     font-family: helvetica-regular;
     src: url("./assets/fonts/helvetica/Helvetica.ttf");
 }
@@ -6,6 +26,22 @@
 @font-face {
     font-family: helvetica-bold;
     src: url("./assets/fonts/helvetica/Helvetica-Bold.ttf");
+}
+
+.raleway-regular {
+    font-family: raleway-regular !important;
+}
+
+.raleway-medium {
+    font-family: raleway-medium !important;
+}
+
+.raleway-bold {
+    font-family: raleway-bold !important;
+}
+
+.lustria-regular {
+    font-family: lustria-regular !important;
 }
 
 .helvetica-regular {
@@ -27,7 +63,7 @@ html {
 }
 
 body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: helvetica-regular, Arial, sans-serif;
 }
 
@@ -75,7 +111,6 @@ h2 {
     font-size: 3.2rem;
     margin-top: 4.8rem;
     margin-bottom: 1.6rem;
-    font-family: helvetica-bold;
 }
 
 .h2-plain {
@@ -117,8 +152,8 @@ li {
 
 p {
     color: #333;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     margin-bottom: 1.6rem;
 }
 
@@ -362,6 +397,10 @@ p {
 
 .gap-24 {
     gap: 2.4rem;
+}
+
+.gap-32 {
+    gap: 3.2rem;
 }
 
 .gap-48 {
@@ -1297,4 +1336,5 @@ header {
     margin-bottom: 1.6rem;
     border: 1px solid #ffffff;
 }
+
 
