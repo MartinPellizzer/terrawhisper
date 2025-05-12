@@ -1,4 +1,6 @@
 :root {
+    --C_WHITE: #ffffff;
+    --C_BLACK: #000000;
     --C_DARK: #0f2223;
     --C_DARK: #12191c;
     --C_YELLOW_LIGHT: #ece0c4;
@@ -7,10 +9,10 @@
 
     --C_MENU: var(--C_YELLOW_LIGHT);
     --C_MENU_BG: var(--C_DARK);
-    --C_LOGO: var(--C_DARK);
-    --C_LOGO_BG: var(--C_YELLOW_LIGHT);
+    --C_LOGO: var(--C_YELLOW_LIGHT);
+    --C_LOGO_BG: var(--C_DARK);
 
-    --C_BODY_BG: var(--C_YELLOW_LIGHT);
+    --C_BODY_BG: var(--C_WHITE);
 
     --C_STUDY_SNIPPET_TEXT: var(--C_YELLOW_LIGHT);
     --C_STUDY_SNIPPET_BG: var(--C_DARK);
@@ -848,6 +850,7 @@ header {
 .header .logo a {
     color: var(--C_LOGO);
     letter-spacing: 8px;
+    letter-spacing: 1px;
 }
 
 .header a {
