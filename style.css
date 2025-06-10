@@ -1,4 +1,15 @@
 :root {
+    --ds-color-brand-teal-50: #e0f2f1;
+    --ds-color-brand-teal-100: #b2dfdb;
+    --ds-color-brand-teal-200: #80cbc4;
+    --ds-color-brand-teal-300: #4db6ac;
+    --ds-color-brand-teal-400: #26a69a;
+    --ds-color-brand-teal-500: #009688;
+    --ds-color-brand-teal-600: #00897b;
+    --ds-color-brand-teal-700: #00786b;
+    --ds-color-brand-teal-800: #00695c;
+    --ds-color-brand-teal-900: #004d40;
+
     --ds-color-brand-brown-50: #efebe9;
     --ds-color-brand-brown-100: #d7ccc8;
     --ds-color-brand-brown-200: #bcaaa4;
@@ -31,6 +42,10 @@
     --ds-theme-color-content-brand: var(--ds-color-brand-grey-900);
     --ds-theme-color-border-brand: var(--ds-color-brand-grey-900);
 
+    --ds-theme-button-color-background: var(--ds-theme-color-background-brand);
+    --ds-theme-button-color-content: var(--ds-theme-color-content-brand);
+    --ds-theme-button-color-border: var(--ds-theme-color-border-brand);
+
     --C_TEXT: #333333;
     --C_HEADER: #111111;
 
@@ -39,6 +54,12 @@
 
     --C_BUTTON_FILL_TEXT: var(--C_YELLOW_LIGHT);
     --C_BUTTON_FILL_BG: var(--C_DARK);
+}
+
+.button-default {
+    background-color: var(--ds-theme-button-color-background);
+    color: var(--ds-theme-button-color-content);
+    border: 1px solid var(--ds-theme-button-color-border);
 }
 
 @font-face {
