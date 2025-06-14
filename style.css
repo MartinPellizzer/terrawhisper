@@ -45,6 +45,16 @@
     --ds-color-utility-red-800: #c62828;
     --ds-color-utility-red-900: #b71c1c;
 
+    --ds-typography-font-family-lora: lora-regular;
+    --ds-typography-font-weight-400: 400;
+    --ds-typography-font-weight-700: 700;
+    --ds-typography-font-size-16: 16px;
+    --ds-typography-line-height-16: 16px;
+    --ds-typography-line-height-24: 24px;
+    --ds-typography-letter-spacing-minus-1: -1px;
+    --ds-typography-text-transform-none: none;
+    --ds-typography-text-transform-uppercase: uppercase;
+
     --C_WHITE: #ffffff;
     --C_BLACK: #000000;
     --C_DARK: #0f2223;
