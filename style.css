@@ -65,6 +65,12 @@
     --C_LINEN: #f5f1eb;
     --C_CHARCOAL: #3e3e3e;
 
+    --ds-color-cedar: #292728;
+
+    --ds-color-carbon-powder: #101211;
+    --ds-color-almond-light: #e7d4bb;
+    --ds-color-merino: #f1f1ec;
+
     --C_MENU: var(--C_YELLOW_LIGHT);
     --C_MENU_BG: var(--C_DARK);
     --C_LOGO: var(--C_YELLOW_LIGHT);
@@ -102,18 +108,31 @@
     --ds-theme-button-color-border-active: var(--ds-color-neutral-900);
     --ds-theme-button-color-border-disabled: var(--ds-color-neutral-900);
 
-    --ds-theme-button-primary-color-background-default: var(--ds-color-neutral-900);
-    --ds-theme-button-primary-color-background-hover: var(--ds-color-neutral-900);
-    --ds-theme-button-primary-color-background-active: var(--ds-color-neutral-900);
+    --ds-theme-button-primary-color-background-default: var(--ds-color-carbon-powder);
+    --ds-theme-button-primary-color-background-hover: var(--ds-color-carbon-powder);
+    --ds-theme-button-primary-color-background-active: var(--ds-color-carbon-powder);
     --ds-theme-button-primary-color-background-disabled: var(--ds-color-neutral-200);
     --ds-theme-button-primary-color-content-default: var(--ds-color-neutral-white);
     --ds-theme-button-primary-color-content-hover: var(--ds-color-neutral-white);
     --ds-theme-button-primary-color-content-active: var(--ds-color-neutral-white);
     --ds-theme-button-primary-color-content-disabled: var(--ds-color-neutral-white);
-    --ds-theme-button-primary-color-border-default: var(--ds-color-neutral-900);
-    --ds-theme-button-primary-color-border-hover: var(--ds-color-neutral-900);
-    --ds-theme-button-primary-color-border-active: var(--ds-color-neutral-900);
+    --ds-theme-button-primary-color-border-default: var(--ds-color-carbon-powder);
+    --ds-theme-button-primary-color-border-hover: var(--ds-color-carbon-powder);
+    --ds-theme-button-primary-color-border-active: var(--ds-color-carbon-powder);
     --ds-theme-button-primary-color-border-disabled: var(--ds-color-neutral-200);
+
+    --ds-theme-button-reverse-color-background-default: var(--ds-color-merino);
+    --ds-theme-button-reverse-color-background-hover: var(--ds-color-merino);
+    --ds-theme-button-reverse-color-background-active: var(--ds-color-merino);
+    --ds-theme-button-reverse-color-background-disabled: var(--ds-color-merino);
+    --ds-theme-button-reverse-color-content-default: var(--ds-color-carbon-powder);
+    --ds-theme-button-reverse-color-content-hover: var(--ds-color-carbon-powder);
+    --ds-theme-button-reverse-color-content-active: var(--ds-color-carbon-powder);
+    --ds-theme-button-reverse-color-content-disabled: var(--ds-color-carbon-powder);
+    --ds-theme-button-reverse-color-border-default: var(--ds-color-merino);
+    --ds-theme-button-reverse-color-border-hover: var(--ds-color-merino);
+    --ds-theme-button-reverse-color-border-active: var(--ds-color-merino);
+    --ds-theme-button-reverse-color-border-disabled: var(--ds-color-merino);
 
     --C_TEXT: #333333;
     --C_HEADER: #111111;
@@ -143,6 +162,15 @@
     border: 1px solid var(--ds-theme-button-primary-color-border-default);
 }
 
+.ds-c-button-reverse {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.2rem 2.4rem;
+    background-color: var(--ds-theme-button-reverse-color-background-default);
+    color: var(--ds-theme-button-reverse-color-content-default);
+    border: 1px solid var(--ds-theme-button-reverse-color-border-default);
+}
+
 
 @font-face {
     font-family: lora-regular;
@@ -154,9 +182,29 @@
     src: url("./assets/fonts/playfair-display/static/PlayfairDisplay-Regular.ttf");
 }
 
+@font-face {
+    font-family: playfair-display-bold;
+    src: url("./assets/fonts/playfair-display/static/PlayfairDisplay-Bold.ttf");
+}
+
 .playfair-display-regular {
     font-family: playfair-display-regular !important;
 }
+
+.display-reverse {
+    color: var(--ds-color-merino);
+    font-family: playfair-display-bold !important;
+    font-size: 9.6rem;
+    line-height: 1;
+}
+
+.subtitle-reverse {
+    color: var(--ds-color-merino);
+    font-family: lora-regular !important;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
 
 * {
     margin: 0;
@@ -903,7 +951,7 @@ header {
     /* position: sticky; */
     /* top: 0; */
     /* z-index: 1000; */
-    background-color: var(--C_MENU_BG);
+    background-color: var(--ds-color-carbon-powder);
     /* border-bottom: 1px solid #d4d4d4; */
 }
 
@@ -917,19 +965,19 @@ header {
 
 .header .logo {
     padding: 2.4rem 2.4rem;
-    background-color: var(--C_LOGO_BG);
+    background-color: var(--ds-color-carbon-powder);
     font-family: font-header;
 }
 
 .header .logo a {
-    color: var(--C_LOGO);
+    color: var(--ds-color-merino);
     letter-spacing: 8px;
     letter-spacing: 1px;
 }
 
 .header a {
     text-decoration: none;
-    color: #171717;
+    color: var(--ds-color-merino);
     font-size: 16px;
     line-height: 1;
 }
@@ -946,7 +994,7 @@ header {
 
 .navigation ul li a {
     font-family: font-header;
-    color: var(--C_MENU);
+    color: var(--ds-color-merino);
     letter-spacing: 1px;
 }
 
@@ -977,7 +1025,7 @@ header {
     position:relative;
     width: 30px;
     height: 4px;
-    background: var(--C_YELLOW_LIGHT);
+    background: var(--ds-color-merino);
     border-radius: 10px;
     cursor: pointer;
     z-index: 2;
@@ -989,7 +1037,7 @@ header {
     position: absolute;
     height: 4px;
     right: 0;
-    background: var(--C_YELLOW_LIGHT);
+    background: var(--ds-color-merino);
     border-radius: 10px;
 }
 
@@ -1056,7 +1104,7 @@ header {
         position: fixed;
         top: 0;
         right: -300px;
-        background: var(--C_MENU_BG);
+        background: var(--ds-color-carbon-powder);
         width: 300px;
         height: 100%;
         padding-top: 65px;
