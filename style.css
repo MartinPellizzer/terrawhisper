@@ -312,6 +312,16 @@ p {
     margin-bottom: 1.6rem;
 }
 
+/* ;components */
+.card-default {
+
+}
+
+.card-default a {
+    text-decoration: none;
+}
+
+/* ;other */
 .text-orange {
     color: #c2410c;
 }
