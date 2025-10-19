@@ -1,8 +1,8 @@
 :root {
+    --color-white-whisper: #f7f6f2;
     --color-carbon-powder: #101211;
     --color-forest-green: #3b5e3b;
     --color-copper-herbal: #a64828;
-    --color-whisper-white: #f7f6f2;
 }
 
 @font-face {
@@ -105,18 +105,20 @@ p {
     .grid-2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
     }
 
     .grid-3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 1.6rem;
     }
 
     .grid-4 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: 1.6rem;
     }
-
 }
 
 
@@ -381,7 +383,7 @@ footer span {
     background-color: var(--color-copper-herbal);
     background-color: var(--color-carbon-powder);
     background-color: var(--color-forest-green);
-    background-color: var(--color-whisper-white);
+    background-color: var(--color-white-whisper);
 }
 
 .free-gift-heading {
@@ -390,3 +392,4 @@ footer span {
     color: var(--color-carbon-powder);
     text-align: center;
 }
+
