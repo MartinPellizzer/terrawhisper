@@ -1,0 +1,253 @@
+:root {
+    --color-carbon-powder: #101211;
+    --color-whisper-white: #f7f6f2;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 64px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container-xl {
+    max-width: 128.0rem;
+    margin: 0 auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+.container-md {
+    max-width: 76.8rem;
+    margin: 0 auto;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: sans-serif;
+}
+
+main {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+}
+
+section {
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-family: serif;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-family: serif;
+    margin-bottom: 1.6rem;
+    margin-top: 6.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-family: serif;
+    margin-bottom: 1.6rem;
+    margin-top: 3.2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    font-family: sans-serif;
+}
+
+a {
+    color: #4CAF50;
+}
+
+ul {
+    margin-left: 3.2rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+dt {
+    font-weight: 700;
+    /* color: #2E7D32; */
+    margin-bottom: 0.8rem;
+}
+
+dd {
+    color: #333333;
+    background-color: #fafafa;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.6rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1.6rem;
+}
+
+.medical-disclaimer {
+    background-color: #fff1f1;
+    padding: 2rem 3rem;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 0.8rem 1.6rem;
+}
+
+/*********************************************/
+/* header..............................[hdr] */
+/*********************************************/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    background-color: #ffffff;
+    /* clean white */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.main-nav .nav-links {
+    display: flex;
+    gap: var(--space-lg);
+    list-style: none;
+}
+
+.main-nav .nav-links li a {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-neutral-dark);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.main-nav .nav-links li a:hover,
+.main-nav .nav-links li a:focus {
+    color: var(--color-primary);
+    outline: none;
+}
+
+#nav-toggle {
+    display: none;
+    /* hidden checkbox */
+}
+
+.hamburger {
+    display: none;
+    /* hidden on desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+@media (max-width: 1024px) {
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .main-nav .nav-links {
+        display: none;
+        /* hidden by default */
+        position: absolute;
+        top: 100%;
+        /* below header */
+        right: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: var(--space-md) var(--space-lg);
+        gap: var(--space-md);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Use general sibling combinator ~ instead of + */
+    #nav-toggle:checked~.main-nav .nav-links {
+        display: flex;
+    }
+
+
+}
+
+
+/*********************************************/
+/* footer..............................[ftr] */
+/*********************************************/
+footer {
+    background-color: var(--color-carbon-powder);
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+footer span {
+    color: white;
+}
+
+/**********************************************
+HUB
+**********************************************/
+
+.hub {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr) 200px;
+    gap: 4rem;
+}
+
+.hub .nav-global {
+  grid-column: 1;
+  position: sticky;
+  top: 146px;
+}
+
