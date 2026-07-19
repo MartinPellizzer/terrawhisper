@@ -14,8 +14,29 @@ body {
     font-family: sans-serif;
 }
 
+.container-xxl {
+    max-width: 160.0rem;
+    margin: 0 auto;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
 .container-xl {
     max-width: 128.0rem;
+    margin: 0 auto;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.container-lg {
+    max-width: 99.6rem;
+    margin: 0 auto;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.container-md {
+    max-width: 76.8rem;
     margin: 0 auto;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
@@ -51,31 +72,48 @@ img {
 /*********************************************/
 
 @media screen and (min-width: 768px) {
-    .grid-2 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .grid-3 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .grid-4 {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .grid-5 {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-    }
 
     .m-flex {
         display: flex;
     }
+}
 
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-5 {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /********************************************/
@@ -86,11 +124,11 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1.6rem 2.4rem;
-    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: #fff;
 }
 
 header .logo img {
@@ -108,7 +146,6 @@ header .logo img {
 .main-nav .nav-links li a {
     font-weight: 500;
     font-size: 16px;
-    color: #000000;
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -137,7 +174,7 @@ header .logo img {
     display: block;
     height: 3px;
     width: 100%;
-    background-color: #333;
+    background-color: #fff;
     border-radius: 2px;
     transition: 0.3s;
 }
@@ -155,11 +192,15 @@ header .logo img {
         top: 100%;
         right: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: #fff;
         flex-direction: column;
         padding: 1.6rem 2.4rem;
         gap: 1.6rem;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-nav .nav-links li a {
+        color: #111 !important;
     }
 
     #nav-toggle:checked~.main-nav .nav-links {
@@ -193,6 +234,22 @@ footer span {
 .breadcrumbs a {
     color: #000000;
     text-decoration: none;
+}
+
+.breadcrumbs-explorer {
+    padding-bottom: 1.6rem;
+}
+
+.breadcrumbs-explorer span {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.breadcrumbs-explorer a {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.4rem;
 }
 
 /*********************************************/
@@ -273,5 +330,159 @@ footer span {
     background-color: #ecfdf5;
     padding: 0.8rem 1.6rem;
     border-radius: 9999px;
+}
+
+.explorer span {
+    color: #111; 
+}
+
+.explorer-layout {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+  .explorer-layout {
+    flex-direction: column-reverse;
+  }
+}
+
+.explorer .pagination {
+    margin-top: 4.8rem;
+}
+
+.explorer .pagination ul {
+    display: flex; 
+    justify-content: center; 
+    gap: 0.8rem;
+}
+
+.explorer .pagination a {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    padding: 0.8rem 1.6rem; 
+    border: 1px solid #e7e7e7;
+    display: inline-block;
+}
+
+.explorer .pagination span {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    padding: 0.8rem 1.6rem; 
+    border: 1px solid #e7e7e7;
+    display: inline-block;
+}
+
+.explorer .pagination .p-cur {
+    color: #fff; 
+    background-color: #111;
+}
+
+.explorer-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4rem; 
+    margin-bottom: 0.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .explorer-hero {
+        flex-direction: column;
+    }
+}
+
+.explorer-card-title {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .explorer-card-title {
+        font-size: 2.4rem;
+    }
+}
+
+/**************************************/
+/* LISTING */
+/**************************************/
+
+.listing section {
+}
+
+.listing h1 {
+    font-size: 4.8rem;
+    line-height: 1.1;
+    margin-bottom: 1.6rem;
+}
+
+.listing h2 {
+    font-size: 3.2rem;
+    margin-top: 8.0rem;
+    margin-bottom: 1.6rem;
+}
+
+.listing h3 {
+    font-size: 2.0rem;
+    margin-top: 4.8rem;
+    margin-bottom: 1.6rem;
+}
+
+/*
+.listing p + p {
+  margin-top: 1.6rem;
+}
+*/
+
+.listing p {
+  margin-bottom: 1.6rem;
+}
+
+.listing table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.listing th {
+    text-align: left;
+    padding: 1.6rem;
+    background-color: #f8f9fa;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.listing td {
+    padding: 1.6rem;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+}
+
+.listing dl {
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.listing dl > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.listing dt {
+    font-weight: 400;
+    color: #555;
+}
+
+.listing dd {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
